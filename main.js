@@ -276,12 +276,9 @@ document.addEventListener("DOMContentLoaded", () => {
     displayAzkar("evening");
 });
 
-  
 
 
-
-// لطلب مواقيت الصلاة من API لمدينة معينة (مثلاً القاهرة)
-fetch('http://api.aladhan.com/v1/timingsByCity?city=Cairo&country=Egypt&method=8')
+fetch('https://api.aladhan.com/v1/timingsByCity?city=Cairo&country=Egypt&method=8')
   .then(response => response.json())
   .then(data => {
     // تحديد توقيت الصلوات
@@ -292,3 +289,4 @@ fetch('http://api.aladhan.com/v1/timingsByCity?city=Cairo&country=Egypt&method=8
     document.getElementById('isha-time').textContent = data.data.timings.Isha;
   })
   .catch(error => console.error('Error fetching prayer times:', error));
+

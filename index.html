@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALMaw3Eza web-- الموعظة ويب</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<link rel="icon" href="maw3.jfif" type="image/x-icon">
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#quran-section">القرآن الكريم</a></li>
+            <li><a href="#hadith-section" class="active">الأحاديث الشريفة</a></li>
+            <li><a href="#azkar-section">أذكار الصباح والمساء</a></li>
+            <li><a href="#prayer-times">مواقيت الصلاة</a></li>
+            <li><a href="#lectures-section">المحاضرات الدينية</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="image-container">
+            <!-- روابط التواصل الاجتماعي في الأعلى -->
+            <div class="social-icons-top">
+                <a href="https://www.facebook.com/profile.php?id=100053134410761&mibextid=ZbWKwL" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/a7med._.hany/profilecard/?igsh=MXdiMmV0dnpvNHR0eg==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/qr/2O2JSVLBTNEIJ1" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <span>: Contact</span>
+            </div>
+            <img src="images/myimage.jpg.jfif" alt="صورة المهندس أحمد هاني" />
+            <div class="creator-info">
+                <p> تم صنع الموقع بواسطة المهندس / أحمد هاني</p>
+                <p>(Web Developer & Pen tester)</p>
+            </div>
+        </div>
+        <div class="website-info">
+            <p>مرحباً بكم في الموعظة ويب</p>
+            <p>موقع متكامل للمسلمين</p>
+        </div>
+    </header>
+
+    <section id="quran-section">
+        <h1>القرآن الكريم</h1>
+        <div id="surah-container">
+            <section class="quran-download">
+                <h2 class="quran-title">تحميل القرآن الكريم</h2>
+                <p class="quran-text">
+                  لتحميل القرآن الكريم كاملاً للقراءة بدون إنترنت:
+                  <a href="https://play.google.com/store/apps/details?id=com.simppro.quran.offline" target="_blank" class="quran-link">اضغط هنا</a>
+                </p>
+                <p class="quran-text">
+                  لتحميل القرآن الكريم كاملاً للاستماع من جميع القراء:
+                  <a href="https://t.me/IslamicQuranBot" target="_blank" class="quran-link">اضغط هنا</a>
+                </p>
+              </section>
+        </div>
+    </section>
+
+    <section id="hadith-section">
+        <h1 class="hadith-title"><p>أحاديث شريفة</p>من صحيح البخاري ومسلم</h1>
+        <main>
+            <div id="hadith-content" class="hadith-box"></div>
+            <div class="buttons">
+                <button onclick="prevHadith()">السابق</button>
+                <button onclick="nextHadith()">التالي</button>
+            </div>
+        </main>
+    </section>
+
+    <section id="azkar-section">
+        <h1 class="azkar-title">أذكار الصباح والمساء</h1>
+        <div class="azkar-container">
+            <div class="azkar-box">
+                <h2>أذكار الصباح</h2>
+                <div id="morning-content"></div>
+                <button onclick="prevAzkar('morning')">السابق</button>
+                <button onclick="nextAzkar('morning')">التالي</button>
+            </div>
+
+            <div class="azkar-box">
+                <h2>أذكار المساء</h2>
+                <div id="evening-content"></div>
+                <button onclick="prevAzkar('evening')">السابق</button>
+                <button onclick="nextAzkar('evening')">التالي</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="prayer-times">
+        <h2>مواقيت الصلاة</h2>
+        <div class="prayer-container">
+            <div class="prayer-circle">
+                <p class="prayer-name">الفجر</p>
+                <p class="prayer-time" id="fajr-time"></p>
+            </div>
+            <div class="prayer-circle">
+                <p class="prayer-name">الظهر</p>
+                <p class="prayer-time" id="dhuhr-time"></p>
+            </div>
+            <div class="prayer-circle">
+                <p class="prayer-name">العصر</p>
+                <p class="prayer-time" id="asr-time"></p>
+            </div>
+            <div class="prayer-circle">
+                <p class="prayer-name">المغرب</p>
+                <p class="prayer-time" id="maghrib-time"></p>
+            </div>
+            <div class="prayer-circle">
+                <p class="prayer-name">العشاء</p>
+                <p class="prayer-time" id="isha-time"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="lectures-section">
+        <h1>المحاضرات الدينية</h1>
+        <div class="lectures-container">
+            <div class="lecture-box">
+                <a href="https://youtu.be/TmPbe4iJsOY?si=g4RfkOv-4etBaA5g">
+                    <img src="1.jpg.jpeg" alt="محاضرة 1">
+                    <h3>صفات النبي (الشيخ عثمان الخميس)</h3>
+                </a>
+            </div>
+            <div class="lecture-box">
+                <a href="https://youtu.be/POJ4YvcwUHo?si=FtQpAtPasEDhZi1i">
+                    <img src="2.jpg.jpeg" alt="محاضرة 2">
+                    <h3>الدعوة المكية (الشيخ عثمان الخميس)</h3>
+                </a>
+            </div>
+            <div class="lecture-box">
+                <a href="https://youtu.be/XpcwKvkJV5o?si=hb-frJ-WC4Ar4jW4">
+                    <img src="3.jpg.jpeg" alt="محاضرة 3">
+                    <h3>رحمة للعالمين (الشيخ عثمان الخميس)</h3>
+                </a>
+            </div>
+            <div class="lecture-box">
+                <a href="https://youtu.be/frqKfznKGnU?si=bI2H3yyBFea_pq0Z">
+                    <img src="4.jpg.jpeg" alt="محاضرة 4">
+                    <h3>العلم وفضلة (الشيخ عثمان الخميس)</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- أسفل الصفحة -->
+    <footer>
+        <div class="footer-container">
+            <p>جميع الحقوق محفوظة لدي Eng / Ahmed Hany</p>
+            <div class="social-icons-bottom">
+                <a href="https://www.facebook.com/profile.php?id=100053134410761&mibextid=ZbWKwL" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/a7med._.hany/profilecard/?igsh=MXdiMmV0dnpvNHR0eg==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/qr/2O2JSVLBTNEIJ1" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="azkar.js"></script>
+    <script src="hadith.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

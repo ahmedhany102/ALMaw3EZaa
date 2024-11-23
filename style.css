@@ -1,0 +1,1045 @@
+/* تنسيق الصفحة الأساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* التنسيق الخاص بشريط التنقل (Navigation Bar) */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #005379;
+    transform: scale(1.1);
+}
+
+/* التنسيق الخاص بالصورة */
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;  /* يجعل الصورة تأخذ عرض الصفحة بالكامل */
+    height: auto;
+    object-fit: cover;  /* يضمن أن الصورة تغطي المساحة بالكامل */
+}
+
+/* النص الذي يظهر على الصورة */
+.creator-info {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgba(.2, .3, .3, 0.4); /* خلفية داكنة للنص لجعله مقروءًا */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* التنسيق الخاص بالقسم الرئيسي */
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #555;
+}
+
+/* إضافة التنسيق للاستجابة للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+
+}
+
+/* التنسيق العام للنص داخل الصورة */
+.creator-info {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 50px; /* الحجم العام للنص */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+
+        display: inline-block; /* يجعل الصندوق بنفس حجم النص */
+        padding: 5px 10px; /* تقليل الحواف حول النص */
+      
+        border-radius: 5px; /* لتنعيم الزوايا */
+        text-shadow: none; /* إزالة الظل السابق على النص نفسه */
+       
+        color: white; /* لون النص */
+        font-size: 24px; /* حجم النص */
+    }
+    
+
+
+
+
+.creator-info {
+    text-align: left; /* يجعل النص يتجه إلى اليسار */
+    
+}
+
+
+
+
+
+.creator-info .name {
+    font-size: 18px; /* قيمة أصغر لاسم أحمد هاني */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.creator-info {
+    font-size: 30px; /* تقليص حجم النص */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #4f88c5;
+    color: white;
+    padding: 3px;
+  }
+  
+  .surah-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .surah-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .surah-item a {
+    text-decoration: none;
+    color: #4caf50;
+  }
+  
+  .surah-item a:hover {
+    color: #2e7d32;
+  }
+  #surah-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  #surah-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  #surah-container a:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+  }
+  #quran-section h1 {
+    font-size: 36px; /* حجم الخط */
+    color: #007BFF; /* لون النص */
+    text-align: center; /* توسيط النص */
+    font-family: 'Roboto', sans-serif; /* تغيير نوع الخط */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* إضافة ظل للنص */
+    margin-bottom: 20px; /* مسافة أسفل العنوان */
+}
+
+
+#hadith-section {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#hadith-container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 80%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#navigation-buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#hadith-section {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+  }
+  
+  #hadith-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .navigation-buttons button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .navigation-buttons button:hover {
+    background-color: #0056b3;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .hadith-box {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    background-color: white;
+    width: 60%;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+  
+  .buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background-color: #45a049;
+  }
+  /* تنسيق العنوان */
+.hadith-title {
+    font-size: 28px;
+    color: #007bff;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* مربع الأحاديث */
+  .hadith-box {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #007bff;
+    background-color: #fff;
+    width: 60%;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* أزرار التنقل */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .buttons button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .buttons button:hover {
+    background-color: #45a049;
+  }
+
+  header {
+    position: relative;
+    padding: 3px;
+    overflow: hidden;
+}
+
+
+
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 10%;
+    }
+}
+
+.website-info {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    right: 25%;
+    top: 27%;
+    transform: translateX(50%);
+    animation: slideInFromRight 1s forwards;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.creator-info {
+    position: absolute;
+    top: 60%; /* More space between the texts */
+    left: 90%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    animation: slideInFromLeft 1s forwards;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .website-info {
+        font-size: 30px;
+        right: 5%;
+        top: 20%;
+    }
+
+    .creator-info {
+        font-size: 16px;
+        padding: 20px;
+        left: 90%;
+        top: 70%; /* Move lower on the screen */
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.azkar-title {
+    font-size: 36px;
+    text-align: center;
+    color:#007bff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.azkar-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.azkar-box {
+    width: 45%;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.azkar-box h2 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#morning-content, #evening-content {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: right;
+    color: #555;
+}
+
+
+
+section {
+    border-bottom: 8px solid #000; /* زيادة سمك الخط ليكون عريضًا */
+    padding-bottom: 20px;  /* إضافة مسافة بين المحتوى والخط */
+    margin-bottom: 20px;   /* إضافة مسافة بعد الخط */
+}
+
+#quran-section {
+    border-bottom: 8px solid #000; /* خط بين القرآن والأحاديث */
+}
+
+#hadith-section {
+    border-bottom: 8px solid #000; /* خط بين الأحاديث والأذكار */
+}
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    direction: rtl;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.azkar-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.azkar-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.azkar-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* مسافة بين المربعات */
+  }
+  
+  .azkar-box {
+    flex: 1 1 48%; /* يجعل المربعات جنبًا إلى جنب على الشاشات الكبيرة */
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* عند الشاشات الصغيرة، يجعل المربعات تحت بعضها */
+  @media (max-width: 768px) {
+    .azkar-box {
+      flex: 1 1 100%; /* يعرض المربعات كل واحد على صف */
+    }
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* منع التمرير الأفقي */
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+  .azkar-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px; /* أضف مسافة داخلية صغيرة */
+  }
+
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .azkar-box {
+    overflow-wrap: break-word; /* يكسر النص الطويل */
+  }
+  /* تصفير الحواف والمساحات */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* منع التمرير الأفقي */
+    box-sizing: border-box;
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  /* الحاوية الرئيسية */
+  .azkar-container {
+    display: flex;
+    flex-wrap: wrap; /* لضمان الانتقال إلى السطر التالي على الشاشات الصغيرة */
+    justify-content: center;
+    gap: 10px; /* مسافة بين العناصر */
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* المربعات */
+  .azkar-box {
+    flex: 1 1 45%; /* عرض بنسبة 45% للشاشات الكبيرة */
+    max-width: 45%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .azkar-box {
+      flex: 1 1 100%; /* عرض كامل للشاشات الصغيرة */
+      max-width: 100%;
+    }
+  }
+  .azkar-box {
+    background-color: #f9f9f9; /* لون خلفية هادئ */
+    border: 2px solid #ddd; /* حدود ناعمة */
+    border-radius: 10px; /* زوايا دائرية */
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    font-family: 'Amiri', serif; /* خط عربي مميز */
+    line-height: 1.8; /* مسافة بين الأسطر */
+    text-align: justify; /* محاذاة النص */
+  }
+  
+  .azkar-box h2 {
+    font-size: 1.5em; /* حجم خط العنوان */
+    color: #444; /* لون النص */
+    margin-bottom: 10px; /* مسافة أسفل العنوان */
+  }
+  
+  .azkar-box button {
+    background-color: #0066cc; /* زر أزرق */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .azkar-box button:hover {
+    background-color: #005bb5; /* تغير اللون عند التمرير */
+  }
+  .azkar-box {
+  background-color: #fff; /* لون الخلفية أبيض */
+  border-radius: 15px; /* زوايا دائرية ناعمة */
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* ظل خفيف مع تأثير */
+  font-family: 'Cairo', sans-serif; /* خط عصري وجميل */
+  color: #333; /* لون النص */
+  text-align: right; /* محاذاة النص لليمين */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.azkar-box:hover {
+  transform: scale(1.05); /* تكبير طفيف عند التمرير */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* ظل أقوى عند التمرير */
+}
+
+.azkar-box h2 {
+  font-size: 1.6em;
+  color: #007bff; /* لون أزرق جميل للعناوين */
+  margin-bottom: 10px;
+  text-transform: uppercase; /* تحويل النص إلى حروف كبيرة */
+}
+
+.azkar-box p {
+  font-size: 1.2em;
+  line-height: 1.7;
+  color: #555; /* لون نص مقروء */
+}
+
+.azkar-box button {
+  background-color: #007bff; /* زر بلون الأزرق */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.azkar-box button:hover {
+  background-color: #0056b3; /* تغيير لون الزر عند التمرير */
+}
+
+
+/* تنسيق عنوان مواقيت الصلاة */
+#prayer-times h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0077ff;
+  margin-bottom: 20px;
+}
+
+/* حاوية مواقيت الصلاة */
+.prayer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* تصميم الدوائر */
+.prayer-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(#00ff7f, #0077ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* نص اسم الصلاة */
+.prayer-name {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* نص التوقيت */
+.prayer-time {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/* استجابة للتصميم */
+@media (max-width: 768px) {
+  .prayer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.quran-download {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f0f8ff; /* خلفية خفيفة */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quran-title {
+  font-size: 24px;
+  color: #0056b3; /* لون أزرق جميل */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.quran-text {
+  font-size: 18px;
+  color: #333; /* لون النص */
+  margin: 5px 0;
+}
+
+.quran-link {
+  color: #009688; /* لون الرابط */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.quran-link:hover {
+  text-decoration: underline;
+  color: #00796b; /* تغيير لون الرابط عند التمرير */
+}
+/* التنسيق الأساسي للشريط العلوي */
+nav {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 5px 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* تأثير عند التمرير على الأزرار */
+nav ul li a:hover {
+  background-color: #005379;
+  transform: scale(1.1);
+}
+
+/* التعديل للأجهزة الصغيرة */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column; /* يجعل الأزرار تظهر فوق بعضها */
+      align-items: center; /* يضمن أن الأزرار تكون في المنتصف */
+  }
+
+  nav ul li {
+      margin: 5px 0; /* تقليل المسافة بين الأزرار */
+  }
+
+  nav ul li a {
+      font-size: 14px; /* تقليل حجم الخط للأجهزة الصغيرة */
+      padding: 6px 12px; /* تقليل حجم الأزرار */
+  }
+}
+
+
+#lectures-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+#lectures-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: -20px; /* هذه القيمة ستصعد الكلمة للأعلى */
+}
+
+.lectures-container {
+  display: flex;
+  justify-content: space-evenly; /* لتوزيع المربعات بالتساوي */
+  flex-wrap: wrap; /* ليتكيف مع الشاشات الصغيرة */
+  gap: 20px;
+}
+
+.lecture-box {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lecture-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.lecture-box:hover img {
+  transform: scale(1.05);
+}
+
+.lecture-box h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+
+.lecture-box a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+#lectures-section h1 {
+  font-size: 30px;
+  color: #007bff; /* تغيير اللون إلى الأزرق */
+  margin-bottom: 30px;
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 30px; /* حجم الأيقونة */
+  color: #3b5998; /* لون الأيقونة */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* تكبير الأيقونة عند المرور عليها */
+  color: #25D366; /* تغيير اللون عند المرور */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* زيادة المسافة بين الأيقونات */
+}
+
+.social-icon {
+  font-size: 30px; /* حجم الأيقونة */
+  color: white; /* تغيير اللون إلى الأبيض */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* تكبير الأيقونة عند المرور عليها */
+  color: #25D366; /* تغيير اللون عند المرور على الأيقونة */
+}
+
+/* تنسيق أيقونات التواصل الاجتماعي */
+.social-icons-top, .social-icons-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 30px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #007bff; /* تغيير اللون عند التمرير */
+}
+
+/* تنسيق footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .footer-container {
+  margin-top: 20px;
+}
+
+footer .social-icons-bottom {
+  margin-top: 10px;
+  gap: 20px;
+}
+.social-icons-top a {
+  margin-left: 15px; /* مسافة بين الأيقونات */
+  margin-right: 15px;
+}
+
+.social-icons-top a:first-child {
+  margin-left: 0; /* إزالة المسافة الأولى */
+}
+.social-icons-top {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons-top span {
+  margin-right: 10px; /* المسافة بين النص والأيقونات */
+  font-size: 18px;
+  color: white; /* اللون الأبيض للنص */
+}
+
+.social-icons-top a {
+  margin-left: 15px; /* المسافة بين الأيقونات */
+}

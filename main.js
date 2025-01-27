@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-tch('https://api.aladhan.com/v1/timingsByCity?city=Cairo&country=Egypt&method=8')
+fetch('https://api.aladhan.com/v1/timingsByCity?city=Cairo&country=Egypt&method=8')
   .then(response => response.json())
   .then(data => {
     // تحديد توقيت الصلوات
